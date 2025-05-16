@@ -1,0 +1,28 @@
+body{
+    background-color: #22ec448c;
+}
+/*el selector principal para el ancho de la pagina*/
+#principal{
+    width: 800px;
+    margin: 0px auto;
+    background-color: #def08c;
+    border-style: solid;
+    border-color: #0d0331;
+    border-width: 2px;
+    padding-left: 20px;
+
+}
+
+label{
+    color: rgb(38, 94, 24);
+    font-size: large;
+}
+div label {
+    width: 25%;
+    float: left;
+}
+|
+h1,h2,h3{
+    font-family: Arial;
+    color: #041752;
+}

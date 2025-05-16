@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--iniciamos con nuestro titulo e inciando el enlaze de nuestra pagina web-->
+        <title>Listas de formularios</title>
+        <meta charset="UTF-8">
+        <script src="listas.js">   </script>
+        <link rel="stylesheet" type="text/css" href="miestilo.css">
+    </head>
+    <body>
+        <div id="principal">
+            <h1>LIstas</h1>
+            <h2>Datos personales</h2>
+            <form>
+                <!--Declaramos nuestras variables es decir seleccionamos el como apareceran
+                en nuestro codigo y asi enlazarlar a las otras fuentes-->
+                <label> Nombre completo: </label>
+                <input type="text" name="nombre" id="nombre"><br />
+                <label>Edad</label>
+                <input type="number" name="edad" id="edad" onpaste="return false"><br>
+                <label>Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Nobinario">Nobinario</option>
+                </select><br />
+                <!--subtitulos de la pagina lo cual nos mostrara una barra deslizante la cual
+                puedas seleccionar lugar de tu nacimiento-->
+                <h2>Lugar de nacimiento</h2>
+                <label>Estado</label>
+                <select name="estado" id="estado">
+                    <!--estados de mexico visibles para la pagina dependiendo estado de 
+                    nacimiento-->
+                    <option value="Jalisco">Jalisco</option>
+                    <option value="Zacatecas">Zacatecas</option>
+                    <option value="Aguascalientes">Aguascalientes</option>
+                    <option value="Durango">Durango</option>
+                    <option value="Ciudad de Mexico">Ciudad de Mexico</option>
+                    <option value="Colima">Colima</option>
+                    <option value="Nayarit">Nayarit</option>
+                    <option value="Guanajuato">Guanajuato</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Guerrero">Guerrero</option>
+
+                </select><br />
+                 <!--Botones visbles para enviar y ser borrados-->
+                <input type="reset" value="Borrar">
+                <input type="button" onclick= verifica() value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
